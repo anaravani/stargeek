@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contanier{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 529px auto;
+    grid-template-areas: 
+    "h "
+    "c "
+    "r ";
+}
+
+header{
+    grid-area: h;
+    height: 40px;
+    background-color: #784770;
+    align-items: center;
+    display: flex;
+  justify-content: center;
+}
+
+.logo img{
+    height: 30px;   
+}
+
+main{
+    grid-area: c ; 
+    background-image: url(imagens/fundo.jpg);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-area: "esquerda direita";
+   
+}
+
+
+
+.esquerda form> textarea{
+    height: 15vw;
+    width: 40vw;
+    margin: 4vw;
+    display: flex;
+    flex-direction: column;
+    border:  solid black; 
+    border-radius: 0px 30px 30px 30px ; 
+    background-color: rgba(255, 255, 255, 0.384);   
+    color: white;
+    font-size: X-large;
+}
+::placeholder { 
+    padding: 0.5vw;
+    color:rgb(238, 238, 238); 
+    font-size: 2.5vw;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.direita form> textarea{
+    height: 37vw;
+    width: 35vw;
+    margin: 4vw;
+    display: flex;
+    flex-direction: column;
+    border:  solid black; 
+    border-radius: 0px 50px 50px 50px ;
+    background-color: rgba(255, 255, 255, 0.384);     
+    color: white;
+    font-size: X-large;
+    
+}
+
+
+footer{
+    grid-area: r;
+    height: 40px;
+    background-color: #784770;
+    display: flex;
+   justify-content: center;
+    
+}
+
+.botao{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #784770;
+    border-radius: 100px;
+    color: black;
+    width: 120px;
+    height: 40px;
+    
+}
+a:hover{
+    background-color: #643B5D;
+}
+
+a:link{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif
+}
+
+textarea {
+    margin: 40px ;
+    width: 250px;
+    height: 100px
+  }

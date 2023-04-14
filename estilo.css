@@ -1,0 +1,195 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contanier{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+     "h "
+      "c " 
+      "r "; 
+}
+
+header{
+    grid-area: h;
+    background-color: #784770;
+    height: auto;
+    display: flex;
+    height: 50%;
+
+}
+
+.logo img{
+    margin-top: 10%;
+    height: 70%;
+    margin-left: 5%;
+}
+.logoletra img{
+    margin-top: 30%;
+    height: 50%;
+    margin-left: 50%;
+}
+.capa img{
+    height: 100%;
+    width: 100%; 
+   
+}
+
+.botaoa{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #784770;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    width: 10%;
+    height: 80%;
+    margin-left: 80%;
+   
+    
+    
+}
+
+.linha{
+    width:100%;
+    height: 0.5%;
+    background-color: #784770;
+    margin-top: 3% ;
+    box-shadow: 0px 2px 4px gray;
+}
+
+
+main{
+    flex-direction: column;
+    background-color: white;
+}
+
+ footer{
+    height: 200%;
+    grid-area: r;
+    background-color: #784770;
+   display: flex;
+   justify-content: space-between;
+    
+ }
+ .textodestaque{
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 200%;
+    font-weight:lighter;
+    width: 70%;
+    text-align: center; 
+
+    
+} 
+
+.cards{
+    display: flex;
+    row-gap: 30%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%; 
+    
+    
+    
+}
+
+
+
+.card{
+    
+    margin-left: 5%;
+    background-color: #D9D9D9;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    
+}
+
+
+
+.cardinfo{
+    
+    width: 100%;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #8E337F;
+    margin-top: -5%;
+}
+
+.cardnome{
+    font-size: 200%;
+}
+
+
+
+.dados{
+   color: white;
+   font-size:100%;
+   width: 50%;
+   font-weight: lighter;
+   line-height: 200%;
+   margin-left: 2%;
+   margin-top: 2%;
+}
+
+.social> i{
+    color: white;
+    display: flex;
+    flex-direction: column ;
+    margin-top: 30%;
+   font-size: 200%;
+   margin-left: -40%;
+   
+   
+}
+
+.debaixo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 200%;
+    font-weight:lighter;
+    width: 70%;
+    text-align: center;  
+    margin-top: 10%; 
+    margin-left: 15%;
+
+}
+
+.botao{
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #784770;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 30%;
+    width: 30%;
+    margin-bottom:5%;
+    margin-top: 5%;
+    
+}
+
+a:link{
+    
+    text-decoration: none;
+    font-size: 120%;
+   
+}
+
+a:hover{
+    background-color: #643B5D;
+}
+
