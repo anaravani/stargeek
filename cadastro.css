@@ -50,7 +50,7 @@ main{
 }
 p{
     font-size:45px;
-    padding-bottom: 30px;
+    padding-bottom: 5px;
     padding-left: 250px;
     
     
@@ -58,7 +58,8 @@ p{
 form{
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+   margin-left: 20px;
+    margin-bottom: 10px;
 }
 
 form > label{
@@ -71,9 +72,11 @@ form > label{
  
 form > input{
     height: 50px;
+    width: 600px;
    border-radius: 20px;
    background-color: #D9D9D9;
    border: 0;
+   font-size: 25px;
 }
 
 footer{
