@@ -57,16 +57,19 @@ main > p{
     word-spacing:20px;
 }
 
-.botaoa{
+#btn{
     background-color: #8E337F;
     width: 250px;
     height: 60px;
     border-radius: 100px;
     color: white;
     display: flex;
+    justify-content: center;
     align-items: center;
-    
-    
+}
+
+#btn > p{
+    font-size: 2vw;
 }
 
 footer{
@@ -144,4 +147,56 @@ a:link{
 .cardnome{
     text-align: center;
     font-size: 30px;
+}
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css&quot;");
+
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 10px;
+}
+
+.cadmodal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #5d3656d3;
+    border-radius: 20px;
+    width: 50%;
+  }
+
+
+
+
+.cards img:hover{
+    opacity: 0.7;
+}
+
+
+
+
+.btneditar{
+    background-color: #8E337F;
+    width: 250px;
+    height: 60px;
+    border-radius: 100px;
+    color: white;
+    display: flex;
+    align-items: center;
 }

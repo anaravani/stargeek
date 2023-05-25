@@ -4,39 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stargeek</title>
+    <title>Catalogo</title>
     <link rel="stylesheet" href="filme.css">
-    <link rel="shortcut icon" type="imagex/png" href="imagens/llogo-_2_.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-    
- <div class="contanier">
-    <header>
-        <div class="logo">
-            <img src="imagens/logop.png" alt="logo">
+    <div class="container">
+        <button id="btn">Cadastrar Item</button>
+        <div class="mensagem"></div>
+        <div class="cards">
         </div>
-    </header>
-    <main>
-       <div class="esquerda">
-       <form>
-          <textarea type='text' id="nome"    placeholder="Nome do Filme:"></textarea>
 
-          <textarea type='text' id="nome" placeholder="Descrição:"></textarea>
-        
-      </form>
-      </div>
-      <div class="direita">
-      <form >  
-          <textarea type='text' id="nome" placeholder="Poster:"></textarea>
-       </form>
-
-      </div> 
-       
-    </main>
-    <footer>
-        <a href="http://127.0.0.1:5500/filme.html?" class="botao">Pronto</a>
-    </footer>
-    
- </div>
-</body>
-</html>
+        <div class="cadmodal">
+            <div class="modal">
+            <form action="" id="formulario">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+                <label for="descricao">Descrição</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+                <label for="foto">Foto</label>
+                <input type="file" name="foto" id="foto">
+                <button class="btncadastrar"> Cadastrar</button>
+                <button class="btneditar">Editar</button>
+                <input type="hidden" id="idalterar">
+            </form>
+            <button id="btnclose" onclick="fechar()">Fechar</button>
+        </div>
+        </div>

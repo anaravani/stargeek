@@ -24,83 +24,7 @@
         <div class="linha"></div>
         <div class="cards">
 
-            <div class="card">
-                <div class="cardimg">
-                  <img src="catalago/nanatsu.jpg" width="200" height="200">
-                </div>
-               <div class="cardinfo">
-                   <div class="cardnome">
-                    Nanatsu no Taizai
-                   </div>
-               </div>
-            </div>
-
-            <div class="card">
-                <div class="cardimg">
-                  <img src="catalago/harry.jpg" width="200" height="200">
-            </div>
-            <div class="cardinfo">
-                <div class="cardnome">
-                   Harry Potter
-                </div>
-            </div>
-            </div>
-
-            <div class="card">
-                <div class="cardimg">
-                  <img src="catalago/one.jpg" width="200" height="200">
-            </div>
-            <div class="cardinfo">
-                <div class="cardnome">
-                   One Picie
-                </div>
-            </div>
-            </div>
-
             
-            <div class="card">
-                <div class="cardimg">
-                  <img src="catalago/mulher.jpg" width="200" height="200">
-            </div>
-            <div class="cardinfo">
-                <div class="cardnome">
-                   Mulher Maravilha
-                </div>
-            </div>
-            </div>
-
-            <div class="card">
-               <div class="cardimg">
-                 <img src="catalago/naruto.jpg" width="200" height="200">
-           </div>
-           <div class="cardinfo">
-               <div class="cardnome">
-                   Naruto
-               </div>
-           </div>
-           </div>
-
-           <div class="card">
-               <div class="cardimg">
-                 <img src="catalago/poke.jpg" width="200" height="200">
-           </div>
-           <div class="cardinfo">
-               <div class="cardnome">
-                   Pokemon
-               </div>
-           </div>
-           </div>
-
-           <div class="card">
-               <div class="cardimg">
-                 <img src="catalago/simps.jpg" width="200" height="200">
-           </div>
-           <div class="cardinfo">
-               <div class="cardnome">
-                   Simpsons
-               </div>
-           </div>
-           </div>
 
            <div class="card">
                <div class="cardimg">
@@ -124,19 +48,38 @@
                </div>
            </div>
            </div>
-            
-          
-                
+
+
+        </div>
+        <div class="container">
+            <button id="btn"><p>Cadastrar Item</p></button>
+            <div class="mensagem"></div>
+            <div class="cards">
+            </div>
     
-             
-         </div>
-     
-        <a href="http://127.0.0.1:5500/cadastrarfilme.html" class="botaoa">Adicionar Título</a>
+            <div class="cadmodal">
+                <div class="modal">
+                <form action="" id="formulario">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                    <label for="descricao">Descrição</label>
+                    <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+                    <label for="foto">Foto</label>
+                    <input type="file" name="foto" id="foto">
+                    <button class="btncadastrar"> Cadastrar</button>
+                    <button class="btneditar">Editar</button>
+                    <input type="hidden" id="idalterar">
+                </form>
+                <button id="btnclose" onclick="fechar()">Fechar</button>
+            </div>
+            </div>
+    
+        </div>
     </main>
     <footer>
         <a href="http://127.0.0.1:5500/index.html#" class="botao">Pronto</a>
     </footer>
    </div>
-
+   <script src="cadastrar.js"></script>
 </body>
 </html>
