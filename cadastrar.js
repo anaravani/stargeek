@@ -10,6 +10,9 @@ const botaoeditar = document.querySelector(".btneditar");
 const botaofechar = document.querySelector("btnclose");
 const idelemento = document.getElementById("idalterar");
 
+var emaillogado;
+femailLogado();
+
 carregarCatalogo();
 
 botaomodal.onclick = () => {
@@ -32,6 +35,7 @@ botaocad.onclick = (evento) => {
                        nome: nome.value,
                        descricao: descricao.value,
                        foto: nomeArq,
+                       email: emaillogado
                    }
                    )
              localStorage.setItem("catalogo", JSON.stringify(dados));
@@ -52,11 +56,12 @@ function carregarCatalogo(){
         return null; 
     }
     dados.forEach((elemento, indice) => {
+        if(elemento.email == emaillogado){
         let divcard = document.createElement("div");
         divcard.setAttribute("class","card")
         divcard.innerHTML = `
         <div class= "cardimg"><img src="img/${elemento.foto}"></div> 
-        <div class="cardinfo">${elemento.nome}
+        <div class="cardnome">${elemento.nome}
         <p>${elemento.descricao}</p>
         </div>
         <div class="cardinfo">
@@ -64,7 +69,7 @@ function carregarCatalogo(){
         <div class="excluir"><i class="bi bi-trash3-fill" onclick="excluir(${indice})"></i></div>
         </div>
         `
-        cards.appendChild(divcard);
+        cards.appendChild(divcard);}
     });
 }
 
@@ -106,6 +111,7 @@ function salvarEdicao(pfoto){
     dados[idelemento.value].nome = nome.value;
     dados[idelemento.value].descricao = descricao.value;
     dados[idelemento.value].foto = pfoto;
+    dados[idelemento.value].email = emaillogado;
     localStorage.setItem("catalogo", JSON.stringify(dados));
 }
 
@@ -145,4 +151,13 @@ async function fenvio(){
     console.error(error);
     return false;
  }
+}
+
+function femailLogado(){
+    let dados = sessionStorage.getItem("logado");
+      if(dados == null){
+        window.location.assign("login.html");
+      } else{
+        emaillogado = dados[0].email;
+      }
 }
